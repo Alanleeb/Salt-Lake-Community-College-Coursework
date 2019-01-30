@@ -1,0 +1,123 @@
+#container { 
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#C3C3C3;
+/*    border-radius: 25px;*/
+    box-shadow: 15px 15px 10px black; 
+}
+#guessForm {
+    margin: 0 auto;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #0C5E7F;
+    text-decoration: underline;
+    font-family: papyrus;
+}
+
+#btn{
+    height: 45px;
+    font-size: 20px;
+    border-radius: 4px;
+    padding-bottom: 2px;
+    color: white;
+    background-color:#5E804D;
+    border: 3px outset #7AA57A;
+}
+#picContainer{
+    margin: 0 auto;
+    border: none;
+
+}   
+#picText {
+    
+    margin: 0 auto;
+    font-size: 30px;
+    color: #F7FF00;
+}
+#userGuessBox {
+    font-size: 18px;
+    border-radius: 4px;
+    height:30px;
+    width: 45px;
+}
+body {
+    font-size: 18px;
+background-color: #E7F3FF;
+    
+}
+.pictureSection {
+   margin: 0 auto;
+}
+#finishBox {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 40%;
+    width: 20%;
+    height: 150px;
+/*    border-radius: 20px;*/
+    z-index: 3;
+    font-size: 28px;
+    visibility: hidden;
+    box-shadow: 10px 10px 5px #7D7777;
+}
+#reloadBtn{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+#guessBox {
+    position: absolute;
+    left: 30%;
+    top: 150px;
+    font-size: 32px;
+    font-family: impact;
+}
+#howTo{
+    position: absolute;
+    top: 150px;
+    right: 27%;
+    font-size: 20px;
+    font-family: arial rounded mt bold;
+    color: #B10834;
+}
+/*div::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url('background.jpg') no-repeat center fixed;
+    opacity: 0.1;
+    width: 100%;
+    
+}*/
+#attempts{
+    position: absolute;
+    top: 50px;
+    left: 4%;
+}
+#guessRecord {
+    position: absolute;
+    top: 110px;
+    left: 5%;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 15%;
+    height: 400px;
+    overflow: auto ;
+    font-size: 20px;
+    font-weight: 800;
+    
+}

@@ -1,0 +1,39 @@
+{
+    "things": [{
+            "id": 1,
+            "Item": "Snowmobiling",
+            "Source": "images/snow.jpg",
+            "Desc": "I enjoy snowmobiling. We have snowmobiles at our cabin in Star Valley, WY and we often travel there for vacation and to snowmobile."
+        },
+        {
+            "id": 2,
+            "Item": "Traveling",
+            "Source": "images/travel.jpg",
+            "Desc": "I like to travel when i can. Some places i have been are Norway, Denmark, London, California. Traveling is always fun especially when you go with the right people. I usually go with family."
+        },
+        {
+            "id": 3,
+            "Item": "Gaming",
+            "Source": "images/game.jpg",
+            "Desc": "I like to play video games in my free time. It is a major stress reliever for me. I play on Xbox One."
+        },
+        {
+            "id": 4,
+            "Item": "Reading",
+            "Source": "images/read.jpg",
+            "Desc": "I enjoy reading. I ususally read non-fiction books that include books about finance, self-help or informational."
+        },
+        {
+            "id":5,
+            "Item":"Programming",
+            "Source":"images/program.png",
+            "Desc":"I enjoy programming and learning programming techniques. Web programming is very fun and is satisfying when you finish a project."
+        },
+        {
+            "id":6,
+            "Item":"Watching TV/Movies",
+            "Source":"images/movie.jpg",
+            "Desc":"I love seeing new movies and watching some tv shows. some of my favorite movies are Lord of the Rings, Rush Hour, & Harry Potter."
+        }
+    ]
+}

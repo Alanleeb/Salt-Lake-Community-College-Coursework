@@ -1,0 +1,10 @@
+{
+    "web": [
+        {
+            "id" : 1,
+            "title": "Sample business site",
+            "desc" : "This is a sample business site that was part of a class assignment in CS 2470",
+            "link" : ""
+        }
+    ]
+}

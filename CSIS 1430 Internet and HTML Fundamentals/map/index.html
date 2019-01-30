@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utah Map</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mapcss.css" rel="stylesheet">  
+        <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script language="javascript" src="scripts/jquery.imagemapster.js"></script>
+
+    </head>
+    <body>
+        <section style="max-width: 95%;">
+            <div id="aboututah">
+                <h3>About Utah</h3>
+                <p> Utah is known for its natural diversity and is home to features
+                    ranging from arid deserts with sand dunes to thriving pine forests
+                    in mountain valleys. It is a rugged and geographically diverse state
+                    that is located at the convergence of three distinct geological
+                    regions: the Rocky Mountains, the Great Basin, and the Colorado Plateau.
+                    Utah was admitted to the Union on January 4th, 1896 as the 45th state.
+                    Utah's capital and largest city is Salt Lake City.</p>
+                <h3>Fun Facts</h3>
+                <ul>
+                    <li>Philo T. Farnsworth, the inventor of television, born in Beaver, UT</li>
+                    <li>The Great Salt Lake is 3 to 5 times saltier than the ocean</li>
+                    <li>women in the Utah Territory got right to vote well before 
+                        the 19th amendment was passed in 1920</li>
+                    <li>Utah has the largest open-pit mine in the world. Visible from
+                        outer space, the Kennecott Copper Mine is nearly a mile deep
+                        and 2.5 miles wide</li>
+                    <li>The nation's first department store was established in Utah</li>
+                    <li>Utah has some of the greatest snow on Earth</li>
+                    <li>Back to the Future 3, The Sandlot and Footloose were filmed in Utah</li>
+                </ul>
+            </div>
+            <div id="utahsymbol">
+                <div id="list">
+                    <h3>State Symbols</h3>
+                    <ul>
+                        <li>State Animal: Rocky Mountain Elk</li>
+                        <li>State Emblem: Beehive</li>
+                        <li>State Flower: Sego Lily</li>
+                        <li>State Fruit: Cherry</li>
+                        <li>State Insect: Honey Bee</li>
+                        <li>State Rock: Coal</li>
+                        <li>State Bird: Seagull</li>
+                        <li>State Fish: Bonneville Cutthroat Trout</li>
+                        <li>State Gem: Topaz</li>
+                        <li>State Mineral: Copper</li>
+                        <li>State Motto: "Industry"</li>
+                    </ul>
+                </div>
+                <h3>State Flag and Seal</h3>
+                <img src="flag.png" alt="flag" style="width:300px; height:200px;">
+                <img src="seal.jpg" alt="seal" style="width:200px; height:200px;">
+            </div>
+            <center id="map">
+                <div>
+
+                    <!-- start of map -->
+
+                    <h1>
+                        <a id="utahlink" href="http://utah.gov">State of Utah</a>
+                    </h1>
+
+                    <img src="utah-physical-map.png"  alt="Utah Map" usemap="#utahmap"  id="utahmap">
+
+                    <map name="utahmap">
+
+                        <area  shape="circle" coords="280,200,30" alt="SLC" href="http://www.visitsaltlake.com">
+
+                        <area shape="circle" coords="370,750,30" alt="Lake Powell" href="http://www.lakepowell.com">
+                        <area shape="circle" coords="530,465,30" alt="Arches" href="http://utah.com/arches-national-park"> 
+                        <area shape="circle" coords="300,425,30" alt="Bryce" href="http://www.brycecanyon.com/">
+                        <area shape="circle" coords="160,625,30" alt="Zions" href="http://www.zionnationalpark.com/"> 
+                        <area shape="circle" coords="310,135,30" alt="Ski" href="https://www.skiutah.com/">
+
+                    </map>
+                </div>
+            </center>
+        </section>
+        <script>
+            $(document).ready(function()
+            {
+                $('#utahmap').mapster({
+                    fillColor: '#0040ff',
+                    fillOpacity: .003
+                });
+            });
+        </script>
+    </body>
+</html>
+

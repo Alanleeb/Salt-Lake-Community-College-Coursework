@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>In Class 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function dropjson() {
+
+                http_request.onreadystatechange = function () {
+                    if (http_request.readyState === 4) {
+                        var jsonObj = JSON.parse(http_request.responseText);
+                        document.getElementById("Title").innerHTML = jsonObj.book[document.getElementById("BookSel").value].Title;
+                        document.getElementById("Author").innerHTML = jsonObj.book[document.getElementById("BookSel").value].Author;
+
+                    }
+                    http_request.open("GET", data_file, true);
+                    http_request.send();
+                };
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Books</h1>
+        <div>
+            <select id ="BookSel" onchange="dropjson()"></select>
+            <table>
+                <tr>
+                    <th id="Title">Title</th>
+                    <th id="Author">Author</th>
+                </tr>
+            </table>
+            <script>
+                var data_file = "books.json";
+                var http_request = new XMLHttpRequest();
+ //               try {
+ //                   http_request = new XMLHttpRequest();
+   //             } catch (e) {
+     //               try {
+       //                 http_request = new XMLHttpRequest("Msxml2.XMLHTTP");
+         //           } catch (e) {
+//
+
+  //                      try {
+    //                        http_request = new XMLHttpRequest("Microsoft.XMLHTTP");
+      //                  } catch (e) {
+        //                    alert("your browser broke");
+
+          //              }
+            //        }
+              //  }
+
+                http_request.onreadystatechange = function () {
+                    if (http_request.readyState === 4) {
+                        var jsonObj = JSON.parse(http_request.responseText);
+                        var text = "<option value='0'>--</option>";
+                        for (var i = 0; i < jsonObj.book.length; i++) {
+                            text = text + "<option value='" + jsonObj.book[i].authorid + "'>" + jsonObj.book[i].Title + "</option>";
+                        }
+                        document.getElementById("BookSel").innerHTML = text;
+                    }
+                    http_request.open("GET", data_file, true);
+                    http_request.send();
+                };
+            </script>
+        </div>
+    </body>
+</html>

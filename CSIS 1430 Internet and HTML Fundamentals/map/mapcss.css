@@ -1,0 +1,39 @@
+#aboututah {
+    max-width: 17%;
+    height: 100%;
+    float: left;
+    position:relative;
+    background-color: #C6C9E2;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    border: 6px outset #9393D2;
+    margin: 0 auto;
+}
+#utahsymbol {
+    width: 17%;
+    height: 100%;
+    float: right;
+    position: relative;
+  margin: 0 auto;
+} 
+#utahlink {
+    text-decoration: underline;
+    color: black;
+}
+#utahlink:hover {
+    color: darkcyan;
+}
+h1 {
+    font-size: 50px;
+}
+#map {
+    margin: 0 auto;
+    max-width: 47%;
+   
+}
+#list {
+    background-color: #8CDEA1;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    border: 6px outset #95AB9B;
+}

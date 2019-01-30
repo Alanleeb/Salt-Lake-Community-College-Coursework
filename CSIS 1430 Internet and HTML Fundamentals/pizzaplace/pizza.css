@@ -1,0 +1,100 @@
+#deliveryForms {
+    visibility: hidden;
+}
+body {
+    background-image: url("pizzabg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 20px;
+    font-family: cursive;
+}
+.infoForm {
+   width: 300px;
+   border-radius: 5px;
+   margin: 5px;
+   height: 25px;
+   font-size: 20px;
+}
+#infoContainer {
+/*    background-color: rgba(81,156,56,.8);*/
+    border-radius: 6px;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#deliveryContainer {
+/*    background-color: rgba(81,156,56,.8);*/
+    border-radius: 6px;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 30%;
+    top: 190px;
+    
+}
+.delRadio {
+
+}
+.addressForm {
+     width: 300px;
+   border-radius: 5px;
+   margin: 5px;
+   height: 25px;
+   font-size: 20px;
+}
+h2 {
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+#sizeContainer {
+/*    background-color: rgba(255,165,0,.8);*/
+    border-radius: 6px;
+    width: 30%;
+    padding-bottom: 7px;
+}
+#topContainer {
+/*    background-color: rgba(255,165,0,.8);*/
+    border-radius: 6px;
+    width: 35%;
+    padding-bottom: 7px;
+    position: absolute;
+    top: 450px;
+    left: 25%;
+}
+#firstContainer {
+    background-color: rgba(81,156,56,.8);
+    width: 60%;
+    height:250px;
+    border-radius: 6px;
+}
+#secondContainer {
+    background-color: rgba(255,165,0,.8);
+    width: 60%;
+    height:400px;
+    border-radius: 6px;
+}
+#submitBtn {
+    font-size: 20px;
+    height: 35px;
+    color: white;
+    background-color: #828394;
+    border-radius: 6px;
+    border-width: 3px;
+}
+#submitContainer {
+    height: 50px;
+    margin-left: 20%;
+}
+#submitBtn:hover {
+    color: blue;
+}
+#pickuptime {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+}

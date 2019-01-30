@@ -1,0 +1,85 @@
+.cell{
+    display: table-cell;
+    border: 3px solid white;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+}
+.row{
+    display: table-row;
+}
+.title{
+    height: 20px;
+}
+h2{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    
+}
+h1{
+    color: #589471;
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: impact;
+}
+body{
+    background-color: #243B4E;
+    color: white;
+}
+#player{
+    color:#FF4444;
+}
+#winner{
+    font-size: 35px;
+    color: gold;
+}
+#playerOneScoreHead{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    text-decoration: underline;
+}
+#playerTwoScoreHead{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    text-decoration: underline;
+}
+#playerOneScore{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    font-size: 25px;
+}
+#playerTwoScore{
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    font-size: 25px;
+}
+#timeGameHead{
+    position: absolute;
+    top: 600px;
+    left: 650px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+}
+#tieGameScore{
+    position: absolute;
+    top: 606px;
+    left: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
